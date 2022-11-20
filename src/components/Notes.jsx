@@ -9,7 +9,11 @@ export const Notes = ({ notes, onRemove }) => {
             <strong>{note.title}</strong>
             <small>{note.date}</small>
           </div>
-          <button type="button" className="btn btn-outline-danger btn-sm">
+          <button
+            type="button"
+            className="btn btn-outline-danger btn-sm"
+            onClick={() => onRemove(note.id)}
+          >
             &times;
           </button>
         </li>
