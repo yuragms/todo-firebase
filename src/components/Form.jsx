@@ -14,7 +14,6 @@ export const Form = () => {
         .addNote(value.trim())
         .then(() => {
           alert.show("Заметка была создана", "success");
-          console.log("111");
         })
         .catch(() => {
           alert.show("Что-то пошло не так", "danger");
