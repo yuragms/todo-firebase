@@ -16,8 +16,8 @@ function App() {
           <div className="container pt-4">
             <Alert />
             <Routes>
-              <Route path="/todo-firebase" element={<Home />} />
-              <Route path="/todo-firebase/about" element={<About />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
             </Routes>
           </div>
         </BrowserRouter>
